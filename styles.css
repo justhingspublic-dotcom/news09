@@ -602,7 +602,22 @@ body {
 }
 
 /* 響應式設計 */
+
+/* 平板電腦 (768px 以下) */
 @media (max-width: 768px) {
+    .site-header {
+        padding: 10px 0;
+    }
+    
+    .main-nav {
+        padding: 8px 0;
+        top: 60px;
+    }
+    
+    .main-content {
+        padding-top: 140px;
+    }
+    
     .header-container {
         flex-direction: row;
         gap: 15px;
@@ -629,35 +644,153 @@ body {
     }
 }
 
+/* 手機 (480px 以下) */
 @media (max-width: 480px) {
+    .site-header {
+        padding: 8px 0;
+    }
+    
+    .main-nav {
+        padding: 6px 0;
+        top: 50px;
+    }
+    
     .main-content {
         padding: 0 15px;
+        padding-top: 120px;
     }
     
     .header-container {
         padding: 0 15px;
+        gap: 10px;
+    }
+    
+    .logo-placeholder {
+        font-size: 24px;
+    }
+    
+    .search-placeholder {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .menu-placeholder {
+        width: 50px;
+        height: 30px;
+        font-size: 12px;
     }
     
     .nav-container {
         padding: 0 15px;
-        gap: 10px;
+        gap: 8px;
     }
     
     .nav-item-placeholder {
-        padding: 8px 12px;
-        font-size: 14px;
-        min-width: 60px;
+        padding: 6px 8px;
+        font-size: 12px;
+        min-width: 50px;
     }
     
     .headline-image {
-        height: 250px;
+        height: 200px;
     }
     
     .headline-title {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    
+    .headline-excerpt {
+        font-size: 14px;
     }
     
     .section-title {
+        font-size: 18px;
+    }
+    
+    .news-title {
+        font-size: 16px;
+    }
+    
+    .sidebar-title {
+        font-size: 16px;
+    }
+}
+
+/* 小手機 (320px 以下) */
+@media (max-width: 320px) {
+    .site-header {
+        padding: 6px 0;
+    }
+    
+    .main-nav {
+        padding: 4px 0;
+        top: 45px;
+    }
+    
+    .main-content {
+        padding: 0 10px;
+        padding-top: 100px;
+    }
+    
+    .header-container {
+        padding: 0 10px;
+        gap: 8px;
+    }
+    
+    .logo-placeholder {
         font-size: 20px;
+    }
+    
+    .search-placeholder {
+        width: 60px;
+        height: 28px;
+        font-size: 11px;
+    }
+    
+    .menu-placeholder {
+        width: 40px;
+        height: 28px;
+        font-size: 11px;
+    }
+    
+    .nav-container {
+        padding: 0 10px;
+        gap: 6px;
+    }
+    
+    .nav-item-placeholder {
+        padding: 4px 6px;
+        font-size: 11px;
+        min-width: 40px;
+    }
+    
+    .headline-image {
+        height: 150px;
+    }
+    
+    .headline-title {
+        font-size: 16px;
+    }
+    
+    .headline-excerpt {
+        font-size: 12px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+    }
+    
+    .news-title {
+        font-size: 14px;
+    }
+    
+    .sidebar-title {
+        font-size: 14px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
